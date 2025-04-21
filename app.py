@@ -26,7 +26,7 @@ extracted_texts = {}
 
 @app.get("/")
 async def index():
-    return "hello world"
+    return "hello world now working"
 
 @app.post("/upload")
 async def upload(file: UploadFile = File(...)):
