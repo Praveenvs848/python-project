@@ -24,7 +24,9 @@ UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 extracted_texts = {}
 
-
+@app.get("/")
+async def index():
+    return "hello world"
 
 @app.post("/upload")
 async def upload(file: UploadFile = File(...)):
