@@ -5,3 +5,5 @@ langchain-core
 langchain-openai
 langgraph
 typing-extensions
+python-multipart
+python-dotenv
